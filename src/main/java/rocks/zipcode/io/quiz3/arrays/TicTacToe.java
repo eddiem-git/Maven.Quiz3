@@ -22,7 +22,9 @@ public class TicTacToe {
 
     public String[] getColumn(Integer value) {
         String item = "";
+        //make a list
         ArrayList<String> list = new ArrayList<>();
+        //add items from columns to list and check its evaluation
         for (String[] strings : board) {
             item = strings[value];
             list.add(item);

@@ -18,13 +18,12 @@ public class SquareArrayAnalyzer {
      * @return true if each `inputArray[i]` has a corresponding `squaredValues[j]` such that `squaredValues[j] == inputArray[i] * inputArray[i]`
      */
     public static Boolean compare(Integer[] inputArray, Integer[] squaredValues) {
+        //googled
         Arrays.sort(inputArray);
         Arrays.sort(squaredValues);
         List<Integer> numbers = Arrays.asList(inputArray);
         List<Integer> squaredNumbers = Arrays.asList(squaredValues);
-        List<Integer> squared = numbers.stream()
-                .map(i -> i * i)
-                .collect(Collectors.toList());
+        List<Integer> squared = numbers.stream().map(i -> i * i).collect(Collectors.toList());
         return squared.equals(squaredNumbers);
     }
 }
