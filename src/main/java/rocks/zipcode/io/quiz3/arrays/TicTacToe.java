@@ -23,26 +23,39 @@ public class TicTacToe {
     public String[] getColumn(Integer value) {
         String item = "";
         ArrayList<String> list = new ArrayList<>();
-        for (int i = 0; i < board.length; i++) {
-            item = board[i][value];
+        for (String[] strings : board) {
+            item = strings[value];
             list.add(item);
         }
         return list.toArray(new String[0]);
     }
 
     public Boolean isRowHomogenous(Integer rowIndex) {
-        return null;
+        boolean flag = false;
+
+        if ( board != null && board.length >= 0 )
+        {
+            if ( board[rowIndex] != null )
+            {
+                flag = true;
+            }
+        }
+        return flag;
     }
 
     public Boolean isColumnHomogeneous(Integer columnIndex) {
-        return null;
+        for (int row=0; row < board[columnIndex].length; row++) {
+            if(board[row][columnIndex] == null){
+                return false;
+            }
+        }
+        return true;
     }
-
     public String getWinner() {
         return null;
     }
 
     public String[][] getBoard() {
-        return null;
+        return this.board;
     }
 }

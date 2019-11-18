@@ -19,7 +19,7 @@ public class StringUtils {
 
         public static String[] getAllSubStrings(String string) {
         return null;
-    }
+        }
 
     public static Integer getNumberOfSubStrings(String input){
         return null;

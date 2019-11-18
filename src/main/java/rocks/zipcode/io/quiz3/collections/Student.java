@@ -7,11 +7,16 @@ import java.util.List;
  */
 public class Student {
 
+    private List<Lab> labs;
+    private String labName;
+    private LabStatus labStatus;
+
     public Student() {
         this(null);
     }
 
     public Student(List<Lab> labs) {
+        this.labs = labs;
     }
 
     public Lab getLab(String labName) {
@@ -19,6 +24,8 @@ public class Student {
     }
 
     public void setLabStatus(String labName, LabStatus labStatus) {
+        this.labName = labName;
+        this.labStatus = labStatus;
     }
 
     public void forkLab(Lab lab) {

@@ -13,15 +13,35 @@ public class ArrayUtility<SomeType> {
     }
 
     public SomeType findOddOccurringValue() {
-        return null;
+        //Go through the array with SomeType of type
+        for (SomeType type : array) {
+            //if the number that occurs of SomeType is NOT divisible by 2
+            if (getNumberOfOccurrences(type) % 2 != 0) {
+                return type;
+            }
+        }return null;
     }
 
     public SomeType findEvenOccurringValue() {
-        return null;
+        //Go through the array with SomeType of type
+        for (SomeType type : array) {
+            //if the number that occurs of SomeType is divisible by 2
+            if (getNumberOfOccurrences(type) % 2 == 0) {
+                return type;
+            }
+        }return null;
     }
 
     public Integer getNumberOfOccurrences(SomeType valueToEvaluate) {
-        return null;
+        int counter = 0;
+        //Go through the array with SomeType of type
+        for (SomeType type : array) {
+            //if the value = type in the array
+            if (valueToEvaluate.equals(type)) {
+                //iterate
+                counter++;
+            }
+        }return counter;
     }
 
     public SomeType[] filter(Function<SomeType, Boolean> predicate) {
