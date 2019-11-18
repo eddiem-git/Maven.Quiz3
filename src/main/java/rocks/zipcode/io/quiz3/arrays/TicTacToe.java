@@ -31,21 +31,17 @@ public class TicTacToe {
     }
 
     public Boolean isRowHomogenous(Integer rowIndex) {
-        boolean flag = false;
-
-        if ( board != null && board.length >= 0 )
-        {
-            if ( board[rowIndex] != null )
-            {
-                flag = true;
+        for (int row=0; row < board[rowIndex].length; row++) {
+            if(board[row][rowIndex] == null){
+                return false;
             }
         }
-        return flag;
+        return true;
     }
 
     public Boolean isColumnHomogeneous(Integer columnIndex) {
-        for (int row=0; row < board[columnIndex].length; row++) {
-            if(board[row][columnIndex] == null){
+        for (int col=0; col < board[columnIndex].length; col++) {
+            if(board[col][columnIndex] == null){
                 return false;
             }
         }
