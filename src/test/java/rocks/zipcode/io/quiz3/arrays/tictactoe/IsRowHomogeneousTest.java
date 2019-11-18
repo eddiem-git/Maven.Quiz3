@@ -18,7 +18,7 @@ public class IsRowHomogeneousTest {
         String[][] board = {row1, row2, row3};
         TicTacToe ticTacToe = new TicTacToe(board);
 
-        Assert.assertTrue(ticTacToe.isRowHomogenous(rowIndex));
+        Assert.assertTrue(ticTacToe.isRowHomogeneous(rowIndex));
     }
 
     @Test
@@ -31,7 +31,7 @@ public class IsRowHomogeneousTest {
         String[][] board = {row1, row2, row3};
         TicTacToe ticTacToe = new TicTacToe(board);
 
-        Assert.assertTrue(ticTacToe.isRowHomogenous(rowIndex));
+        Assert.assertTrue(ticTacToe.isRowHomogeneous(rowIndex));
     }
 
 
@@ -45,7 +45,7 @@ public class IsRowHomogeneousTest {
         String[][] board = {row1, row2, row3};
         TicTacToe ticTacToe = new TicTacToe(board);
 
-        Assert.assertFalse(ticTacToe.isRowHomogenous(rowIndex));
+        Assert.assertFalse(ticTacToe.isRowHomogeneous(rowIndex));
     }
 
 
@@ -59,6 +59,6 @@ public class IsRowHomogeneousTest {
         String[][] board = {row1, row2, row3};
         TicTacToe ticTacToe = new TicTacToe(board);
 
-        Assert.assertTrue(ticTacToe.isRowHomogenous(rowIndex));
+        Assert.assertTrue(ticTacToe.isRowHomogeneous(rowIndex));
     }
 }

@@ -10,7 +10,6 @@ import java.util.List;
  */
 public class WaveGenerator {
     public static String[] wave(String str) {
-        str = str.toLowerCase();
         String[] strings = new String[0];
         List<String> list = new ArrayList<>();
         for (int currentIndex = 0; currentIndex < str.length(); currentIndex++) {

@@ -30,7 +30,7 @@ public class TicTacToe {
         return list.toArray(new String[0]);
     }
 
-    public Boolean isRowHomogenous(Integer rowIndex) {
+    public Boolean isRowHomogeneous(Integer rowIndex) {
         for (int row=0; row < board[rowIndex].length; row++) {
             if(board[row][rowIndex] == null){
                 return false;
