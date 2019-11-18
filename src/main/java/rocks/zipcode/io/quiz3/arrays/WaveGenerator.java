@@ -9,6 +9,7 @@ import java.util.List;
  * @author leon on 09/12/2018.
  */
 public class WaveGenerator {
+    //GOOGLED
     public static String[] wave(String str) {
         String[] strings = new String[0];
         List<String> list = new ArrayList<>();

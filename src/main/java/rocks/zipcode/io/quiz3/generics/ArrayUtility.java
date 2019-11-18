@@ -7,6 +7,7 @@ import java.util.function.Function;
  */
 public class ArrayUtility<SomeType> {
     private final SomeType[] array;
+    //GOOGLED ALL
 
     public ArrayUtility(SomeType[] array) {
         this.array = array;
